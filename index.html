@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table exercise</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="/assets/styles/common.css" />
+</head>
+
+<body>
+  <div id="holder" class="container_half"></div>
+  <script type="module">
+    import ProductCard from './index.js';
+
+    let card = new ProductCard({
+      name: "Laab kai chicken salad",
+      price: 10,
+      category: "salads",
+      image: "laab_kai_chicken_salad.png",
+      id: "laab-kai-chicken-salad"
+    });
+
+
+    holder.append(card.elem);
+
+  </script>
+  <!-- <script>
+    const btn = document.createElement('button')
+    btn.innerText = 'Event Button'
+    btn.style.backgroundColor = 'red'
+    document.body.appendChild(btn)
+
+    console.log(btn)
+
+
+    btn.addEventListener('click', () => {
+      const myEvent = new Event('MyEvent', {bubbles: true})
+      alert('clicked')
+
+      btn.dispatchEvent(myEvent)
+
+      
+    })
+
+    document.body.addEventListener('MyEvent', () => alert('body heard MyEvent'))
+    // document.body.addEventListener('click', () => alert('body heard Click'))
+  </script> -->
+</body>
+
+</html>
